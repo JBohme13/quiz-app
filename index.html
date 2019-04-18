@@ -4,27 +4,34 @@
         <meta name="viewport" content="width=device-width">
         <title>Avalanche Rescue Quiz</title>
         <link href="main.css" rel="stylesheet" type="text/css" />
-        <script src="https://code.jquery.com/jquery-3.4.0.js"
+        <!--<script src="https://code.jquery.com/jquery-3.4.0.js"
         integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
         crossorigin="anonymous"></script>
-        <script src='index.js'></script>
+        <script src='data-store.js'></script>
+        <script src='index.js'></script>-->
     </head>
     <body>
         <header>
             <h1 class='quiz-title'>Avalance Rescue Quiz</h1>
             <div>
                 <ul class='quiz-stats'>
-                    <li>question: <span class='question-number'>1/10</span></li>
-                    <li>Score: <span class='score-number'>1/10</span></li>
+                    `<li>question: <span class='question-number'>${questionNumber}</span></li>`
+                    <li>Score: <span class='score-number'>${score}</span></li>
                 </ul>
             </div>
         </header>
-        <main>
+        <main class='start'>
             <div class='quiz-start'>
               <h2 class='opening-heading'>Are you ready to start the quiz?</h2>
               <button type='button' class='start-button'>Start Quiz</button>
             </div>
+            <div class='question-html'></div>
 
         </main>
+        <script src="https://code.jquery.com/jquery-3.4.0.js"
+        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+        crossorigin="anonymous"></script>
+        <script src='data-store.js'></script>
+        <script src='index.js'></script>
     </body>
 </html>
