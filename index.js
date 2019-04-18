@@ -37,13 +37,6 @@ function renderQuizQuestion() {
     $('.question-html').html(quizQuestion());
 }
 
-function startQuiz() {
-    $('.start-button').click(function(event) {
-        renderQuizQuestion();
-        $('.quiz-start').remove();
-        console.log('startQuiz ran');
-    });
-}
 
 function changeQuestionNumber() {
     questionNumber ++;
