@@ -33,15 +33,54 @@
 }
 
 .answer-option {
-  font-size: 16px;
-  text-align: center;
+  font-size: 24px;
+  padding: 10px;
 }
 
 .restart-button {
   display: none;
 }
 
-@media only screen and (min-width: 800px) {
+.answers {
+  text-align: center;
+}
+
+.submit-button {
+  margin-top: 10px;
+  height: 30px;
+  width: 60px;
+}
+
+.question {
+  text-align: center;
+}
+
+.answer-box {
+  text-align: center;
+  font-size: 32px;
+  border: dotted grey 3px;
+}
+
+.next-button {
+  width: 150px;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.restart-button {
+  width: 150px;
+  height: 72px;
+  margin-left: 45%;
+  margin-right: 45%;
+  margin-top: 50px;
+}
+
+@media only screen and (min-width: 720px) {
     .quiz-stats {
       text-align: right;
       margin-right: 50px;
