@@ -37,6 +37,10 @@
   padding: 10px;
 }
 
+input[type="radio"]{
+  margin: 10px 10px 10px 10px;
+}
+
 .restart-button {
   display: none;
 }
