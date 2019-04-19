@@ -69,9 +69,11 @@ body {
   }
   
   .answers {
-    text-align: center;
+    text-align: left;
     color: #34385ed8;
     text-shadow: 2px 2px 2px #5e50b5;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   fieldset {
@@ -80,11 +82,11 @@ body {
   
   .submit-button {
     margin-top: 7%;
-    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
     height: 72px;
     width: 150px;
     background-image: linear-gradient(#406098, #663399);
-  
   }
   
   .submit-button:hover {
