@@ -1,23 +1,15 @@
-* {
-    box-sizing: border-box;
-}
-
-/*body {
-    background-image: url'https://landscapephotographymagazine.com/wp-content/uploads/2016/09/Photographing-Mountain-Layers.jpg';
-}*/
-
 .quiz-title {
     text-align: center;
     font-size: 36px;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .quiz-stats {
     text-align: center;
     list-style-type: none;
     font-size: 24px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .opening-heading {
@@ -34,4 +26,36 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.answer-option {
+  font-size: 16px;
+  text-align: center;
+}
+
+.restart-button {
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+    .quiz-stats {
+      text-align: right;
+      margin-right: 50px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      right: 50px;
+      bottom: 100px;
+
+    }
+
+    .quiz-title {
+      text-align: left;
+      margin-left: 50px;
+      display: inline-block;
+    }
 }

@@ -1,4 +1,3 @@
-
 const STORE = [
     {
         question: 'What Thee Avalanche rescue tools should you have on your person at all times in the backcountry?',
@@ -25,7 +24,7 @@ const STORE = [
             '"On at the top, off at the bottom"',
             '"on when it\'s steep, off when it\'s not"',
             '"on when you need it, off when you don\'t"'],
-        correctanswer: '"On at the car, off at the Bar"'
+        correctAnswer: '"On at the car, off at the Bar"'
     },
     {
         question: 'In a group of riders/ skiers, how should downhill travel be handled \
@@ -92,4 +91,4 @@ const STORE = [
             'trust and mutual respect helps with communication',
             'All of the above'],
         correctAnswer: 'All of the above'
-    }];    
+    }];     
