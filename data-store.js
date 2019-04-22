@@ -2,10 +2,10 @@ const STORE = [
     {
         question: 'What Thee Avalanche rescue tools should you have on your person at all times in the backcountry?',
         answers: [
-            'water, food, shelter',
-            'helmet, airbag, avalung',
-            'beacon, shovel, probe',
-            'bacon, eggs, potatos'],
+            'Water, food, shelter',
+            'Helmet, airbag, avalung',
+            'Beacon, shovel, probe',
+            'Bacon, eggs, potatos'],
         correctAnswer: 'beacon, shovel, probe'
     },
     {
@@ -22,8 +22,8 @@ const STORE = [
         answers: [
             '"On at the car, off at the Bar"',
             '"On at the top, off at the bottom"',
-            '"on when it\'s steep, off when it\'s not"',
-            '"on when you need it, off when you don\'t"'],
+            '"On when it\'s steep, off when it\'s not"',
+            '"On when you need it, off when you don\'t"'],
         correctAnswer: '"On at the car, off at the Bar"'
     },
     {
@@ -76,10 +76,10 @@ const STORE = [
     {
         question: 'When digging someone out, where do you srart?',
         answers: [
-            'at the probe, straight down',
+            'At the probe, straight down',
             '3 feet left or right of the probe',
-            'about 100cm down hill from the probe',
-            'up hill from the probe'],
+            'About 100cm down hill from the probe',
+            'Up hill from the probe'],
         correctAnswer: 'about 100cm down hill from the probe'
     },
     {
@@ -88,7 +88,7 @@ const STORE = [
         answers: [
             'If an avalanche occurs, they are your means of rescue',
             'Skilled partners help make informed decisions',
-            'trust and mutual respect helps with communication',
+            'Trust and mutual respect helps with communication',
             'All of the above'],
         correctAnswer: 'All of the above'
     }];     

@@ -7,24 +7,24 @@ let score = 0;
 function quizQuestion() {
     if(questionNumber < STORE.length) {
         return ` <div class='question-page'>
-        <h2 class='question'>${STORE[questionNumber].question}</h2>
         <form class='answers'>
+        <legend class='question'>${STORE[questionNumber].question}</legend>
         <fieldset>
-            <label>
-            <input type='radio' name='answer' value='${STORE[questionNumber].answers[0]}'>
-            <span class='answer-option'>${STORE[questionNumber].answers[0]}</span>
+            <label  class='answer-option'>
+            <input type='radio' name='answer' value='${STORE[questionNumber].answers[0]}' required='required'>
+            <span>${STORE[questionNumber].answers[0]}</span>
             </label><br>
-            <label>
+            <label class='answer-option'>
             <input type='radio' name='answer' value='${STORE[questionNumber].answers[1]}'>
-            <span class='answer-option'>${STORE[questionNumber].answers[1]}</span>
+            <span>${STORE[questionNumber].answers[1]}</span>
             </label><br>
-            <label>
+            <label class='answer-option'>
             <input type='radio' name='answer' value='${STORE[questionNumber].answers[2]}'>
-            <span class='answer-option'>${STORE[questionNumber].answers[2]}</span>
+            <span>${STORE[questionNumber].answers[2]}</span>
             </label><br>
-            <label>
+            <label class='answer-option'>
             <input type='radio' name='answer' value='${STORE[questionNumber].answers[3]}'>
-            <span class='answer-option'>${STORE[questionNumber].answers[3]}</span>
+            <span>${STORE[questionNumber].answers[3]}</span>
             </label><br>
             <button type='submit' class='submit-button'>submit</button>
         </fieldset>
@@ -104,6 +104,7 @@ function nextQuestion() {
     changeQuestionNumber();
     displayQuestionNumber();
     renderQuizQuestion();
+    questionNumberCap();
   });
 }
 
@@ -120,14 +121,14 @@ function quizResults() {
         </div>`
   } else if (score < 5) {
     return `<div class="answer-box">
-        <p>Your score it ${score}, please try again.</p>
+        <p>Your score is ${score}, please try again.</p>
         <button class="next-button">next</button>
         </div>`
   };
 }
 
 function displayQuestionNumber() {
-  $('.question-number').text(questionNumber + 1);
+  $('.question-number').text(questionNumber + 1 + '/10');
   console.log('displayQuestionNumber ran');
 }
 
