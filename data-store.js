@@ -6,7 +6,7 @@ const STORE = [
             'Helmet, airbag, avalung',
             'Beacon, shovel, probe',
             'Bacon, eggs, potatos'],
-        correctAnswer: 'beacon, shovel, probe'
+        correctAnswer: 'Beacon, shovel, probe'
     },
     {
         question: 'At about what slope steepness do avalanches become a hazard?',
@@ -80,7 +80,7 @@ const STORE = [
             '3 feet left or right of the probe',
             'About 100cm down hill from the probe',
             'Up hill from the probe'],
-        correctAnswer: 'about 100cm down hill from the probe'
+        correctAnswer: 'About 100cm down hill from the probe'
     },
     {
         question: 'Why is it important to skilled partners you trust when going into\
