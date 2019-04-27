@@ -30,10 +30,6 @@ function quizQuestion() {
         </fieldset>
         </form>
     <div>`;
-    } else {
-      $('.question-html').html(quizResults());
-      $('.next-button').hide();
-      $('.restart-button').show();
     }
 }
 
@@ -56,7 +52,9 @@ function startQuiz() {
 }
 
 function changeQuestionNumber() {
+    if(questionNumber <= 9) {
     questionNumber ++;
+    };
 }
 
 function changeScore() {
@@ -101,10 +99,15 @@ function wrongAnswerSubmit() {
 
 function nextQuestion() {
   $('.question-html').on('click', '.next-button', function(event) {
+    if(questionNumber === 9) {
+      $('.question-html').html(quizResults());
+      $('.next-button').hide();
+      $('.restart-button').show();
+    } else {
     changeQuestionNumber();
     displayQuestionNumber();
     renderQuizQuestion();
-    questionNumberCap();
+    };
   });
 }
 

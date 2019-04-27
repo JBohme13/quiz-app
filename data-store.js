@@ -13,7 +13,7 @@ const STORE = [
         answers: [
             '15-20 degrees',
             '25-30 degrees',
-            '25-30 degrees',
+            '35-40 degrees',
             '45-50 degrees'],
         correctAnswer: '25-30 degrees'
     },
@@ -91,4 +91,4 @@ const STORE = [
             'Trust and mutual respect helps with communication',
             'All of the above'],
         correctAnswer: 'All of the above'
-    }];     
+    }];    
